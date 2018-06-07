@@ -41,7 +41,7 @@ var map = new ol.Map({
     ],
     overlays: [overlay],
     view: new ol.View({
-        center: ol.proj.fromLonLat([11, 45]),
+        center: ol.proj.fromLonLat([11, 47]),
         zoom: 5
     })
 });
