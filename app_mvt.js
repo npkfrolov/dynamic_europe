@@ -1,6 +1,6 @@
 /* Bad globals =( */
 var ngwUrl = 'http://213.248.47.89',
-    sourceGroupId = 343,
+    sourceGroupId = 913,
     currentLayer;
 
 $.ajax({
@@ -41,8 +41,8 @@ var map = new ol.Map({
     ],
     overlays: [overlay],
     view: new ol.View({
-        center: ol.proj.fromLonLat([45, 45]),
-        zoom: 2
+        center: ol.proj.fromLonLat([11, 45]),
+        zoom: 3
     })
 });
 
@@ -52,11 +52,10 @@ map.on('singleclick', function(evt) {
 	    var props = feature.getProperties();
 	    //console.log(props);
 	    var toolTip = 'Слой №' + props.layer + '</br>' +
-			  		  'LwDate: ' + props.lwdate + '</br>' +
-			  		  'SrcData: ' + props.srcdata + '</br>' +
+			  		  'LineComnt: ' + props.linecomnt + '</br>' +
+	    				  'LwDate: ' + props.lwdate + '</br>' +
 			  		  'EventStart: ' + props.eventstart + '</br>' +
-			  		  'UpDtRl: ' + props.updtappr + '</br>' +
-			  		  'LineComnt: ' + props.linecomnt + '</br>';
+			  		  'UpDtRl: ' + props.updtappr + '</br>';
 
         var coordinate = evt.coordinate;
         popupContent.innerHTML = toolTip;
@@ -89,7 +88,7 @@ function loadGeoJSON(layersMeta) {
   $('#timeline').attr('max', maxYear);
 
   // Filter by year
-  var initLayerId = getLayerIdByYear(layersDescription, 1876);
+  var initLayerId = getLayerIdByYear(layersDescription, 1050);
 
   // Add initial layer to map
   updateLayer(initLayerId);
