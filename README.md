@@ -1,2 +1,2 @@
-# russia-history
+# European history
 Demo
