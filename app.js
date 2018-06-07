@@ -59,7 +59,7 @@ function loadGeoJSON(layersMeta) {
   });
 
   // Filter by year
-  var initLayerId = getLayerIdByYear(layersDescription, 1876);
+  var initLayerId = getLayerIdByYear(layersDescription, 1050);
 
   // Add initial layer to map
   updateLayer(initLayerId);
@@ -116,11 +116,10 @@ function updateLayer(layerId) {
 	        		//console.log(layer);
 	        		var props = layer.feature.properties;
 	        		var toolTip = 'Слой №' + layer.feature.id + '</br>' +
-								  'LwDate: ' + props.LwDate + '</br>' +
-								  'SrcData: ' + props.SrcData + '</br>' +
+								  'LineComnt: ' + props.LineComnt + '</br>' +
+				                                  'LwDate: ' + props.LwDate + '</br>' +
 								  'EventStart: ' + props.EventStart + '</br>' +
-								  'UpDtRl: ' + props.UpDtRl + '</br>' +
-								  'LineComnt: ' + props.LineComnt + '</br>';
+								  'UpDtRl: ' + props.UpDtRl + '</br>';
 	        		return toolTip;
 	        	});
 	        	if (!map.hasLayer(updatedLayer)) {
