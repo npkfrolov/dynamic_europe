@@ -55,7 +55,7 @@ map.on('singleclick', function(evt) {
 			  		  'LineComnt: ' + props.linecomnt + '</br>' +
 	    				  'LwDate: ' + props.lwdate + '</br>' +
 			  		  'EventStart: ' + props.eventstart + '</br>' +
-			  		  'UpDtRl: ' + props.updtappr + '</br>';
+			  		  'UpDtRl: ' + props.upperdat + '</br>';
 
         var coordinate = evt.coordinate;
         popupContent.innerHTML = toolTip;
