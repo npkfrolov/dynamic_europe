@@ -1,6 +1,7 @@
 /* Bad globals =( */
-var ngwUrl = 'http://histgeo.nextgis.com',
-	sourceGroupId = 2,
+//var ngwUrl = 'http://histgeo.nextgis.com',
+var ngwUrl = 'https://gis.runivers.ru',
+	sourceGroupId = 6873,
 	currentLayer = {};
 
 // Projections	
@@ -116,10 +117,10 @@ function updateLayer(layerId) {
 	        		//console.log(layer);
 	        		var props = layer.feature.properties;
 	        		var toolTip = 'Слой №' + layer.feature.id + '</br>' +
-								  'LineComnt: ' + props.LineComnt + '</br>' +
-				                                  'LwDate: ' + props.LwDate + '</br>' +
-								  'EventStart: ' + props.EventStart + '</br>' +
-								  'UpDtRl: ' + props.UpDtRl + '</br>';
+								  'linecomnt: ' + props.linecomnt + '</br>' +
+				                                  'lwdate: ' + props.lwdate + '</br>' +
+								  'eventstart: ' + props.eventstart + '</br>' +
+								  'upperdat: ' + props.upperdat + '</br>';
 	        		return toolTip;
 	        	});
 	        	if (!map.hasLayer(updatedLayer)) {
