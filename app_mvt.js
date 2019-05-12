@@ -1,6 +1,6 @@
 /* Bad globals =( */
 var ngwUrl = 'http://213.248.47.89',
-    sourceGroupId = 913,
+    sourceGroupId = 6873,
     currentLayer;
 
 $.ajax({
@@ -52,10 +52,10 @@ map.on('singleclick', function(evt) {
 	    var props = feature.getProperties();
 	    //console.log(props);
 	    var toolTip = 'Слой №' + props.layer + '</br>' +
-			  		  'LineComnt: ' + props.linecomnt + '</br>' +
-	    				  'LwDate: ' + props.lwdate + '</br>' +
-			  		  'EventStart: ' + props.eventstart + '</br>' +
-			  		  'UpDtRl: ' + props.upperdat + '</br>';
+			  		  'linecomnt: ' + props.linecomnt + '</br>' +
+	    				  'lwdate: ' + props.lwdate + '</br>' +
+			  		  'eventstart: ' + props.eventstart + '</br>' +
+			  		  'upperdat: ' + props.upperdat + '</br>';
 
         var coordinate = evt.coordinate;
         popupContent.innerHTML = toolTip;
