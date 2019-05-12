@@ -1,6 +1,6 @@
 /* Bad globals =( */
 //var ngwUrl = 'http://histgeo.nextgis.com',
-var ngwUrl = 'https://gis.runivers.ru',
+var ngwUrl = 'http://213.248.47.89',
 	sourceGroupId = 6873,
 	currentLayer = {};
 
